@@ -2,13 +2,16 @@ function palindrome (num) {
 
     let revNum = 0;
     let initialNum = num;
+
+    if(num < 0) return false;
+    
     while(num > 0) {
         const lastDigit = num % 10;
         revNum = (revNum * 10) + lastDigit
         num = Math.trunc(num / 10);
     }
 
-    return revNum == initialNum ? true : false
+    return revNum === initialNum ? true : false
 }
 
 console.log(palindrome(121))

@@ -13,6 +13,9 @@
 // Large number
 
 function reverseNumber(num) {
+
+  let sign = Math.sign(num);
+  num = Math.abs(num);
   let revNum = 0;
 
   while (num > 0) {
@@ -20,7 +23,7 @@ function reverseNumber(num) {
     revNum = revNum * 10 + lastDigit;
     num = Math.trunc(num / 10);
   }
-  return revNum;
+  return revNum * sign;
 }
 
 console.log(reverseNumber(12345));
