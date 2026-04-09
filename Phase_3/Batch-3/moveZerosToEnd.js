@@ -20,5 +20,5 @@ console.log(moveZerosToEnd([0, 1, 0, 3, 12]));
 // function moveZerosToEnd(arr) {
 //     const nonZeros = arr.filter(num => num !== 0);
 //     const zeros = arr.filter(num => num === 0);
-//     return [...nonZeros, ...zeros]; // Dono ko merge kar diya
+//     return [...nonZeros, ...zeros]; // Merge both
 // }
